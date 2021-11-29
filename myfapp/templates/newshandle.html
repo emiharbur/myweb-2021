@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>待处理消息</title>
+</head>
+
+<body>
+<h1 style="text-align: center">待处理消息({{ count }})</h1>
+<form action="save/" method="post">
+<div class="col-lg-10 col-lg-offset-1">
+
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Sign in</button>
+    </div>
+  </div>
+</form>
+
+
+
+
+
+
+
+
+</div>
+
+<!--
+<table width="100%" border="1" cellpadding="8">
+  <tbody>
+    <tr>
+      <th width="10%" align="right" style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; font-size: 24px;">id</th>
+      <td><input name="id" type="text" readonly="readonly" value={{ news.id }}></td>
+    </tr>
+    <tr>
+      <th align="right" style="font-size: 18px; font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace;">datetime</th>
+      <td><input name="datetime_list" type="datetime" readonly="readonly" value={{ news.datetime_list }}></td>
+    </tr>
+    <tr>
+      <th align="right" valign="top" style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; font-size: 18px;">newstext</th>
+      <td><textarea style=" font-size:24px" rows="10" cols="50" name="news" id="news" >{{ news.news }}</textarea>
+        </td>
+    </tr>
+    <tr>
+      <th align="right" valign="top" style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; font-size: 24px;">area</th>
+      <td><table width="100%">
+        <tr>
+          <td width="20%"><label>
+            <input type="radio" name="area" value="1" id="RadioGroup2_0">
+            美国</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="area" value="2" id="RadioGroup2_1">
+            中国</label></td>
+            </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="area" value="3" id="RadioGroup2_2">
+            欧洲</label></td>
+          </tr>
+        <tr>
+            <td><label>
+            <input type="radio" name="area" value="4" id="RadioGroup2_3">
+            原油</label></td>
+        </tr>
+           <tr>
+          <td><label>
+            <input type="radio" name="area" value="5" id="RadioGroup2_4">
+            日本</label></td>
+        </tr>
+          <tr>
+          <td><label>
+            <input type="radio" name="area" value="6" id="RadioGroup2_5">
+            拉美</label></td>
+        </tr>
+          <tr>
+          <td><label>
+            <input type="radio" name="area" value="7" id="RadioGroup2_6">
+            澳洲</label></td>
+        </tr>
+          <tr>
+          <td><label>
+            <input type="radio" name="area" value="8" id="RadioGroup2_7">
+            其他</label></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <th align="right" valign="top" style="font-family: Consolas, 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', Monaco, 'Courier New', monospace; font-size: 16px;">important</th>
+      <td><table width="100%">
+        <tr>
+          <td width="20%"><label>
+            <input type="radio" name="important" value="9" id="RadioGroup1_0">
+            待定</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="important" value="4" id="RadioGroup1_1">
+            十分重要</label></td>
+            </tr>
+        <tr>
+          <td><label>
+            <input type="radio" name="important" value="3" id="RadioGroup1_2">
+            重要</label></td>
+          </tr>
+        <tr>
+            <td><label>
+            <input type="radio" name="important" value="2" id="RadioGroup1_3">
+            一般</label></td>
+        </tr>
+           <tr>
+          <td><label>
+            <input type="radio" name="important" value="1" id="RadioGroup1_4">
+            不重要</label></td>
+        </tr>
+      </table></td>
+    </tr>
+    <tr>
+      <th align="right">note</th>
+      <td><input type="text" value="" name="note"></td>
+    </tr>
+    <tr>
+      <th align="right">isDelete</th>
+      <td><input type="checkbox" name="isDelete" value= 1 /></td>
+    </tr>
+  </tbody>
+</table>
+    <input type="submit" value="保存并处理下一个" style="font-size:24px;width:250px;height:60px;">
+-->
+
+</form>
+</body>
+</html>

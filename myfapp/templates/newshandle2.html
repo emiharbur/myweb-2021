@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>待处理消息{{ count }}</title>
+     <link href="http://test.emimoyna.top/static/js/jquery-3.3.1.js" rel="stylesheet" >
+    <link href="http://test.emimoyna.top/static/bootstrap.css" rel="stylesheet" >
+    <link href="http://test.emimoyna.top/static/js/bootstrap.js" rel="stylesheet" >
+</head>
+<style>
+#myform .btn-group .btn-primary.active{background-color: lightskyblue}
+#myform .btn-group .btn-info.active{background-color: yellowgreen}
+#myform .btn-group .btn-warning.active{background-color: red}
+</style>
+
+<body>
+<div class="container">
+<h1 class="text-center">待处理消息{{ count }}</h1>
+
+<form id="myform" class="form-horizontal" method="post" action="save/">
+    <div class="row">
+
+  <div class="form-group ">
+    <label for="inputid" class="control-label sr-only">id</label>
+
+      <input type="text" class="form-control " id="inputid" name="id" placeholder="Email" value="{{ news.id }}" readonly="readonly">
+
+    
+
+    <label for="inputdatatime" class="control-label sr-only">datetime</label>
+
+      <input type="datetime" class="form-control " id="inputdatatime" name="datetime_list" value={{ news.datetime_list }} readonly="readonly">
+    </div>
+  </div>
+    <div class="row"><div class="form-group">
+    <label for="newtext" class="control-label sr-only">news</label>
+    <div class="col-xs-12">
+        <textarea rows="8" cols="50" id="newtext" name="news">{{ news.news }}</textarea>
+    </div>
+  </div>
+    </div>
+
+    <div class="row">
+    <div class="form-group">
+    <label  class="control-label sr-only">area</label>
+    <div class="col-xs-12">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="1">美国
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="2">中国
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="3">欧洲
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="4">原油
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="5">日本
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="6">拉美
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="7">澳洲
+            </label>
+            <label class="btn btn-info">
+            <input type="radio" name="area" autocomplete="off" value="8">其他
+            </label>
+
+        </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="row">
+    <div class="form-group">
+    <label for="important" class="control-label sr-only">important</label>
+    <div class="col-xs-12">
+        <div class="btn-group" id="important" data-toggle="buttons">
+            <label class="btn btn-primary">
+            <input type="radio" name="important" autocomplete="off" value="1">不重要
+            </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="important" autocomplete="off" value="2">一般
+            </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="important" autocomplete="off" value="3">重要
+            </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="important" autocomplete="off" value="4">十分重要
+            </label>
+            <label class="btn btn-primary">
+            <input type="radio" name="important" autocomplete="off" value="9">待定
+            </label>
+
+
+        </div>
+    </div>
+  </div>
+    </div>
+
+    <div class="row">
+    <div class="form-group">
+    <label for="inputEmail3" class="control-label sr-only">note</label>
+    <div class="col-xs-12">
+      <input type="text" class="form-control" id="inputEmail3" name="note" placeholder="请输入补充备注" value="" disabled>
+
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="form-group">
+          <label for="inputisdelete" class="control-label sr-only">isDelete</label>
+        <div class="col-xs-12">
+        <div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-warning">
+    <input type="checkbox" autocomplete="off" name="isDelete" value="1" id="inputisdelete"> 删除（信息将被逻辑删除）
+  </label>
+
+</div>
+    </div>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="form-group">
+
+    <div class="col-xs-12">
+      <button type="submit" class="btn btn-default">保存并处理下一个</button>
+    </div>
+  </div>
+    </div>
+
+</form>
+
+</div>
+  <script src="http://test.emimoyna.top/static/js/jquery-3.3.1.js"></script>
+  <script src="http://test.emimoyna.top/static/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
